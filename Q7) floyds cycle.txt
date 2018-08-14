@@ -1,0 +1,19 @@
+node* check_loop(node *head)
+{
+	node *p=head
+	node *q=head
+	while(p && q && q->next)
+		p=p->next
+		q=q->next->next
+		if(p==q)
+			return p	
+			print loop is there
+}
+node* start_loop(node *p,node *head)
+{
+	node *q=head
+	while(p!=q)
+		p=p->next
+		q=q->next
+	return p
+}

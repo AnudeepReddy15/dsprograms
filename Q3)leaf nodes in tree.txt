@@ -1,0 +1,12 @@
+1.Declare count=0
+2.void count_leaves(node* root)
+{
+	if(root)
+		if(root->left=null && root->right=null)
+			count++
+	else
+		if(root->left)
+			count_leaves(root->left)
+		if(root->right)
+			count_leaves(root->right)
+}

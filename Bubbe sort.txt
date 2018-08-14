@@ -1,0 +1,11 @@
+int data[],i,n,step,temp
+for(step=0;step<n-1;++step)
+    for(i=0;i<n-step-1;++i)
+    {
+        if(data[i]>data[i+1])   //To sort in descending order change > to < 
+        {
+            temp=data[i];
+            data[i]=data[i+1];
+            data[i+1]=temp;
+        }
+    }

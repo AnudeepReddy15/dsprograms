@@ -1,0 +1,22 @@
+Searching
+
+1. Start from root.
+2. Compare the inserting element with root 
+3.If less than root, then recurse for left, else recurse for right.
+4.If element to search is found anywhere 
+5.return true, else return false.
+
+Inserting
+
+1.Start from root.
+2.Compare the inserting element with root
+3.if less than root then recurse for left else recurse for right.
+4.After reaching end,just insert that node at left
+5.if less than current else right.
+
+deletion
+
+1. Starting at root, find the deepest and rightmost node in binary tree 
+2. node which we want to delete.
+3. Replace the deepest rightmost node’s data with node to be deleted.
+4. Then delete the deepest rightmost node.

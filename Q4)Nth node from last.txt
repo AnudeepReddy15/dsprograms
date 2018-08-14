@@ -1,0 +1,13 @@
+node *find_nth(node *head,int n)
+{
+	node *p=head
+	node *f=head
+	int c=1;
+	while(c<=n-1)
+		f=f->next
+		c+=1
+	while(f->next==null)
+		f=f->next
+		p=p->next
+	print p
+}

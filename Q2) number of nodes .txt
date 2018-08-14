@@ -1,0 +1,9 @@
+1.consider tree
+2.in count(node *n)
+3.declare c=1
+4.if n=null
+	return 0
+5.else  
+	c=c+count(n->l)
+	c=c+count(n->r)
+6.return c

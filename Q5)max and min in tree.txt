@@ -1,0 +1,17 @@
+int FindMin(BstNode* root)
+{
+	if(root==null)
+		tree is empty
+			return -1
+	while(root_left!=null)
+		root=root->left
+	return root->data
+}
+int FindMax(BstNode* root)
+{
+	if(root==null)
+		tree is empty
+			return -1
+	while(root_right!=null)
+		root=root->right
+	return root->data

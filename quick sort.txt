@@ -1,0 +1,11 @@
+int arr
+int j=0,i=0,p=a[last]
+while(j<length)
+	if(a[i]<a[last])
+`		swap(a[i],a[j])
+		i++
+		j++
+	else
+		j++
+		if(j==last)
+			swap(a[i],a[j])

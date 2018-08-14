@@ -1,0 +1,8 @@
+void deleteTree(node* p)
+{
+	if(p==null)
+		return
+	deleteTree(p->left)
+	deleteTree(p->right)
+	free(p)
+}

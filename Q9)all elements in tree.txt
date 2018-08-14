@@ -1,0 +1,4 @@
+1. consider undirected tree
+2.perform bfs traversal 
+3.enqueue the nodes of each level queue
+4.print the queue

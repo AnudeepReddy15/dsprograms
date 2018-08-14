@@ -1,0 +1,12 @@
+void check(node *head)
+{
+	node *p
+	while(1)
+		p=p->next->next
+		if(p==null)
+			print even
+			break
+		if(p->next=null)
+			print odd
+			break
+}

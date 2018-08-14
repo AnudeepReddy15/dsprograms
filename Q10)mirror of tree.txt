@@ -1,0 +1,10 @@
+void mirror(node *root)
+{
+	if(root)
+		mirror(root->left)
+		mirror(root->right)
+		node *temp=root->left
+		root->left=root->right   //swapping
+		root->right=temp
+	return
+}

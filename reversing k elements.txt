@@ -1,0 +1,6 @@
+1.consider a queue
+2.enqueue the elements into queue
+3.for reversing the first k elements dequeue k elements nd push the elements to stack
+4.pop elements from stack
+5.elements will get reversed 
+6.dequeue the remaining elements from queue

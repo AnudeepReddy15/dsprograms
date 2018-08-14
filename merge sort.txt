@@ -1,0 +1,11 @@
+mergesort(arr(low,high))
+start
+if(arr>=1)
+	return arr
+else
+	mid=(low+high)/2
+	leftarr=mergesort(arr(low,mid))
+	rightarr=mergesort(arr(mid+1,high))
+	resultarr=merge(leftarr,rightarr)
+	return resultarr
+end

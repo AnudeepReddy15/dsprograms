@@ -1,0 +1,8 @@
+
+1.When i= 1, (i % 3 == 1) move between S and D 
+2.When i = 2,  (i % 3 == 2) move between S and A 
+3.When i = 3, (i % 3 == 0) move between A and D 
+4.When i = 4, (i % 4 == 1) move between S and D
+5.When i = 5, (i % 5 == 2) move between S and A 
+6.When i = 6, (i % 6 == 0) move between A and D
+7.When i = 7, (i % 7 == 1) move between S and D

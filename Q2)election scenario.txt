@@ -1,0 +1,11 @@
+1.declare a,i,b1,b2,b3
+2.for(i=0;i<n;i++)
+3.switch(a)
+	case 1;b1++
+		break
+	case 2;b2++
+		break
+	case 3;b3++
+		break
+ default:exit()
+}

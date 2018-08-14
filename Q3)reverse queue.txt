@@ -1,0 +1,5 @@
+1.create a queue q1 of len n
+2.create a stack of same len
+3.remove from elements from queue one by one 
+4.store them in stack
+5.pop stack and store in queue

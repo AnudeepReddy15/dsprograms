@@ -1,0 +1,6 @@
+1.small=a[top]
+2.for(i=top-1 to 0)
+3.if(a[i]<small)
+4.small=a[i]
+5.i++
+6.return small

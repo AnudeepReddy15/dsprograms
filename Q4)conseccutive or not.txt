@@ -1,0 +1,6 @@
+1) Sort all the elements.
+2) Do a linear scan of the sorted array. 
+3.If the difference between current element and next element is not 1
+4.then return false. 
+5.If difference is 1
+6.return true.
