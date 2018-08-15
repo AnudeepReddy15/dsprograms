@@ -1,0 +1,138 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Program Test = new Program();
+            Test.Swapping();
+            Test.WordCount();
+            int[] a = { 1, 2, 3, 4, 6 };
+            // p.zerobetweenone();
+            Test.MissingNumber(a, 5);
+            int[] arr = { 1, 0, 2, 0, 3, 0, 4 };
+            Test.PushZerosToEnd(arr, 7);
+            int[] arr1 = {  9,6,8,2,12,4,3,16,13,7 };
+            Test.MinMax(arr1, 10);
+        }
+
+        private void Swapping()
+        {
+            string a = "hi";
+            string b = "hello";
+            a = a + b;
+            b = a.Substring(0, a.Length - b.Length);
+            a = a.Substring(b.Length);
+            Console.WriteLine("a = " + a + " and b = " + b);
+            Console.ReadKey();
+
+        }
+
+        private void WordCount()
+        {
+
+            string s = " value momentum software services";
+            char[] seperator = { ' ' };
+            int wordsCount = s.Split(seperator, StringSplitOptions.RemoveEmptyEntries).Length;
+            s.Split(' ');
+            Console.WriteLine("number of words are : ");
+            Console.WriteLine(wordsCount.ToString());
+            Console.ReadKey();
+        }
+
+        /*  private void zerobetweenone()
+           {
+               string s = "11000011";
+               int len = s.Length;
+               int first = 0;
+               for(int i=0;i<len;i++)
+               {
+                   if (s[i] == '1')
+                       first = i;
+                   break;
+               }
+               int last = 0;
+               for(int i=len-1;i>=0;i--)
+               {
+                   if (s[i] == '1')
+                       last = i;
+                   break;
+               }
+               for(int i=first;i<=last;i++)
+               {
+                   if (s[i] == '0')
+                       Console.WriteLine(false);
+
+                   Console.WriteLine(true);
+               }
+
+               Console.ReadKey();
+           }*/
+
+        private void MissingNumber(int[] a, int n)
+        {
+            //int[] a = new int[100];
+            int i, total;
+            total = (n + 1) * (n + 2) / 2;
+            for (i = 0; i < n; i++)
+                total -= a[i];
+            Console.WriteLine("missing number is :");
+            Console.WriteLine(total);
+            Console.ReadKey();
+        }
+
+        private void PushZerosToEnd(int[] arr, int n)
+        {
+            int count = 0;
+            for (int i = 0; i < n; i++)
+                if (arr[i] != 0)
+                    arr[count++] = arr[i];
+            while (count < n)
+                arr[count++] = 0;
+            Console.WriteLine("resultant array is: ");
+            for (int i = 0; i < n; i++)
+                Console.Write(arr[i] + " ");
+            Console.ReadKey();
+        }
+
+        private void MinMax(int[] arr1, int n)
+        {
+            Array.Sort(arr1);
+            int i, j,k=0;
+            int[] Target = new int[n];
+            int count = arr1.Length;
+            for (i = 0,j=count-1; i < n / 2 && j>=n/2; i++,j--,k++)
+
+            {
+                Target[k] = arr1[i];
+                k++;
+                Target[k] = arr1[j];
+            }
+            for(int m=j;m>=n/2;m--)
+            {
+                Target[k] = arr1[j];
+            }
+            //Console.WriteLine(Target);
+
+            /*for (i = 0; i < n; i++)
+                arr1[i] = Target[i];
+            for(i=0;i<n;i++)
+            Console.WriteLine(arr1[i] + " ");*/
+            Console.WriteLine("Target array is");
+            for (i = 0; i < n; i++)
+                Console.Write(Target[i]);
+
+                Console.ReadKey();
+
+
+            
+        }
+    }
+}
